@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CentralView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsn-Vm-yFx" userLabel="userHealthBarBackground">
+                    <rect key="frame" x="20" y="53" width="30" height="495"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="495" id="P7q-MW-tL6"/>
+                        <constraint firstAttribute="width" constant="30" id="bI0-Er-FiN"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20h-oQ-82e" userLabel="userHealthBar">
+                    <rect key="frame" x="20" y="53" width="30" height="495"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.22197898646897646" green="0.68168308423913038" blue="0.10116943072499521" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="495" id="PDh-nc-tp6"/>
+                        <constraint firstAttribute="width" constant="30" id="uNb-gd-qjK"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5G-gf-pnl" userLabel="box1">
+                    <rect key="frame" x="100" y="69" width="120" height="120"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="q1k-vQ-Xdz"/>
+                        <constraint firstAttribute="width" constant="120" id="uQs-eS-jWK"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyG-5f-13Q" userLabel="box3">
+                    <rect key="frame" x="100" y="391" width="120" height="120"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-5Q-LEB" userLabel="opponentHealthBarBackground">
+                    <rect key="frame" x="270" y="53" width="30" height="495"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="kHn-SG-eyo"/>
+                        <constraint firstAttribute="height" constant="495" id="rl2-YC-F20"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSF-XM-hGh" userLabel="box2">
+                    <rect key="frame" x="100" y="230" width="120" height="120"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQ4-4c-abm" userLabel="opponentHealthBar">
+                    <rect key="frame" x="270" y="53" width="30" height="495"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.2219789865" green="0.68168308420000001" blue="0.10116943069999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="495" id="K6c-Eq-UKf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XQ4-4c-abm" firstAttribute="leading" secondItem="YSF-XM-hGh" secondAttribute="trailing" constant="50" id="0lj-3r-4fP"/>
+                <constraint firstItem="YyG-5f-13Q" firstAttribute="top" secondItem="YSF-XM-hGh" secondAttribute="bottom" constant="41" id="6i2-VM-2P2"/>
+                <constraint firstItem="AZY-5Q-LEB" firstAttribute="leading" secondItem="XQ4-4c-abm" secondAttribute="leading" id="8cY-7d-pO5"/>
+                <constraint firstItem="YSF-XM-hGh" firstAttribute="top" secondItem="W5G-gf-pnl" secondAttribute="bottom" constant="41" id="EQg-iQ-n55"/>
+                <constraint firstItem="20h-oQ-82e" firstAttribute="leading" secondItem="Vsn-Vm-yFx" secondAttribute="leading" id="EY8-qa-TPW"/>
+                <constraint firstAttribute="centerX" secondItem="W5G-gf-pnl" secondAttribute="centerX" id="HbM-Rg-fpi"/>
+                <constraint firstItem="YSF-XM-hGh" firstAttribute="width" secondItem="YyG-5f-13Q" secondAttribute="width" id="KrD-ji-KIO"/>
+                <constraint firstItem="XQ4-4c-abm" firstAttribute="bottom" secondItem="20h-oQ-82e" secondAttribute="bottom" id="MMU-D5-mae"/>
+                <constraint firstItem="AZY-5Q-LEB" firstAttribute="bottom" secondItem="XQ4-4c-abm" secondAttribute="bottom" id="TgY-kA-xZC"/>
+                <constraint firstAttribute="centerX" secondItem="YSF-XM-hGh" secondAttribute="centerX" id="Uwn-Kx-MKf"/>
+                <constraint firstAttribute="trailing" secondItem="XQ4-4c-abm" secondAttribute="trailing" constant="20" symbolic="YES" id="ZSA-gH-Xeb"/>
+                <constraint firstItem="YSF-XM-hGh" firstAttribute="width" secondItem="YyG-5f-13Q" secondAttribute="width" id="dpz-so-oT3"/>
+                <constraint firstAttribute="bottom" secondItem="YyG-5f-13Q" secondAttribute="bottom" constant="57" id="qrC-TV-Yuo"/>
+                <constraint firstItem="YSF-XM-hGh" firstAttribute="height" secondItem="W5G-gf-pnl" secondAttribute="height" id="sqg-bC-POk"/>
+                <constraint firstItem="20h-oQ-82e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="vfl-XQ-zzy"/>
+                <constraint firstItem="20h-oQ-82e" firstAttribute="bottom" secondItem="Vsn-Vm-yFx" secondAttribute="bottom" id="w3z-cn-nBP"/>
+                <constraint firstItem="W5G-gf-pnl" firstAttribute="leading" secondItem="20h-oQ-82e" secondAttribute="trailing" constant="50" id="x5t-KJ-z3C"/>
+                <constraint firstItem="YSF-XM-hGh" firstAttribute="leading" secondItem="W5G-gf-pnl" secondAttribute="leading" id="ykl-lv-gN3"/>
+                <constraint firstItem="YSF-XM-hGh" firstAttribute="leading" secondItem="YyG-5f-13Q" secondAttribute="leading" id="yyY-o2-PDY"/>
+                <constraint firstItem="YSF-XM-hGh" firstAttribute="height" secondItem="YyG-5f-13Q" secondAttribute="height" id="z5r-Jm-B1U"/>
+                <constraint firstAttribute="bottom" secondItem="20h-oQ-82e" secondAttribute="bottom" constant="20" id="zLU-CE-iyP"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="magicBox" destination="YSF-XM-hGh" id="BpV-ZM-QoT"/>
+                <outlet property="opponentHealthBar" destination="XQ4-4c-abm" id="C9q-6X-Ivi"/>
+                <outlet property="opponentHealthBarHeight" destination="K6c-Eq-UKf" id="Wbe-l6-CKi"/>
+                <outlet property="punchBox" destination="W5G-gf-pnl" id="pQD-cy-bN7"/>
+                <outlet property="shieldBox" destination="YyG-5f-13Q" id="3yD-iI-Fgh"/>
+                <outlet property="userHealthBar" destination="20h-oQ-82e" id="KBC-ei-WtD"/>
+                <outlet property="userHealthBarHeight" destination="PDh-nc-tp6" id="Jna-As-we4"/>
+            </connections>
+        </view>
+    </objects>
+</document>

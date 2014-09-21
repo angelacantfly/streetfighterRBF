@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IntroHUD">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="297"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STREET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYj-Iq-BcJ">
+                    <rect key="frame" x="-150" y="52" width="104" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Xyj-Am-Fs7"/>
+                        <constraint firstAttribute="width" constant="104" id="mZR-Wb-QB8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9r-Ho-NFH">
+                    <rect key="frame" x="20" y="9" width="210" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="RPr-mg-Xjp"/>
+                        <constraint firstAttribute="width" constant="210" id="n9f-6g-717"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIGHTER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-13-A9T">
+                    <rect key="frame" x="325" y="81" width="116" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="msh-hS-9zc"/>
+                        <constraint firstAttribute="width" constant="116" id="sZa-mx-Krk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4V5-Wf-nq8">
+                    <rect key="frame" x="54" y="185" width="143" height="63"/>
+                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                    <state key="normal" title="Look for opponents">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="opponentsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="bIc-eb-qr2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="o9r-Ho-NFH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="124-sB-2a4"/>
+                <constraint firstItem="sfA-13-A9T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="325" id="2xh-Lj-FAn"/>
+                <constraint firstItem="o9r-Ho-NFH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="3pb-EJ-DxP"/>
+                <constraint firstItem="ZYj-Iq-BcJ" firstAttribute="top" secondItem="o9r-Ho-NFH" secondAttribute="bottom" constant="10" id="QOa-8q-F9V"/>
+                <constraint firstItem="ZYj-Iq-BcJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-150" id="SrQ-lM-ERS"/>
+                <constraint firstItem="sfA-13-A9T" firstAttribute="top" secondItem="o9r-Ho-NFH" secondAttribute="bottom" constant="39" id="tEU-CT-ie8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="fighterConstraint" destination="2xh-Lj-FAn" id="ggN-IW-WXj"/>
+                <outlet property="fighterLabel" destination="sfA-13-A9T" id="Sw9-CV-fsO"/>
+                <outlet property="opponentsButton" destination="4V5-Wf-nq8" id="slw-Ri-I0J"/>
+                <outlet property="streetConstraint" destination="SrQ-lM-ERS" id="8Tu-2n-9h8"/>
+                <outlet property="streetLabel" destination="ZYj-Iq-BcJ" id="0DU-bY-VTr"/>
+            </connections>
+        </view>
+    </objects>
+</document>
